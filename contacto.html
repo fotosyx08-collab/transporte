@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Ruta Clara</title>
+  <meta name="description" content="Cuéntanos tu experiencia con las rutas de Transmecar o contáctanos para más información sobre el proyecto Ruta Clara.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#contenido-principal" class="saltar-enlace">Saltar al contenido principal</a>
+
+  <header class="encabezado">
+    <nav class="barra-nav" aria-label="Navegación principal">
+      <a href="index.html" class="marca">
+        <svg class="marca__icono" viewBox="0 0 48 48" role="img" aria-label="Logotipo de Ruta Clara">
+          <circle cx="24" cy="24" r="21" fill="none" stroke="#ffb400" stroke-width="3"/>
+          <path d="M14 28c2-10 6-14 10-14s8 4 10 14" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="14" cy="28" r="2.6" fill="#ffb400"/>
+          <circle cx="24" cy="20" r="2.6" fill="#ffb400"/>
+          <circle cx="34" cy="28" r="2.6" fill="#ffb400"/>
+        </svg>
+        <span>Ruta Clara</span>
+      </a>
+      <ul class="nav-lista">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="rutas.html">Rutas</a></li>
+        <li><a href="proyecto.html">Proyecto</a></li>
+        <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido-principal">
+    <section class="hero" style="padding:50px 20px;">
+      <div class="hero__contenido">
+        <span class="hero__etiqueta">Tu opinión cuenta</span>
+        <h1 class="hero__titulo" style="font-size:2.2rem;">Cuéntanos tu experiencia</h1>
+        <p class="hero__texto">Tus respuestas nos ayudan a mejorar la claridad de la información de las rutas.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Encuesta rápida para usuarios</h2>
+        <p class="subtitulo-seccion">Toma menos de dos minutos y es completamente anónima si lo prefieres.</p>
+
+        <form class="formulario" action="#" method="post" novalidate>
+          <div class="campo">
+            <label for="nombre">Nombre (opcional)</label>
+            <input type="text" id="nombre" name="nombre" aria-describedby="ayuda-nombre" autocomplete="name">
+            <span id="ayuda-nombre" class="campo__ayuda">Déjalo en blanco si prefieres responder de forma anónima.</span>
+          </div>
+
+          <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" aria-describedby="ayuda-correo" autocomplete="email">
+            <span id="ayuda-correo" class="campo__ayuda">Solo si quieres que te contactemos con los resultados del estudio.</span>
+          </div>
+
+          <div class="campo">
+            <label for="ruta">¿Qué ruta de Transmecar usas con más frecuencia?</label>
+            <select id="ruta" name="ruta" aria-describedby="ayuda-ruta">
+              <option value="calle17">Ruta Calle 17</option>
+              <option value="calle30">Ruta Calle 30</option>
+              <option value="caracoli">Ruta Caracolí</option>
+              <option value="central">Ruta La Central</option>
+              <option value="otra">Otra / no estoy seguro</option>
+            </select>
+            <span id="ayuda-ruta" class="campo__ayuda">Elige la que más se acerque a tu recorrido habitual.</span>
+          </div>
+
+          <div class="campo">
+            <label for="dificultad">¿Cuál es tu principal dificultad al usar Transmecar?</label>
+            <select id="dificultad" name="dificultad" aria-describedby="ayuda-dificultad">
+              <option value="paradas">No sé cuál es mi parada de bajada</option>
+              <option value="recorrido">No entiendo bien el recorrido completo</option>
+              <option value="conexiones">Se me complica hacer conexiones entre rutas</option>
+              <option value="horarios">No conozco los horarios</option>
+              <option value="ninguna">Ninguna, me oriento sin problema</option>
+            </select>
+            <span id="ayuda-dificultad" class="campo__ayuda">Selecciona la opción que mejor describa tu situación habitual.</span>
+          </div>
+
+          <div class="campo">
+            <label for="comentarios">Comentarios adicionales</label>
+            <textarea id="comentarios" name="comentarios" rows="5" aria-describedby="ayuda-comentarios"></textarea>
+            <span id="ayuda-comentarios" class="campo__ayuda">Cuéntanos cualquier detalle que nos ayude a mejorar esta herramienta.</span>
+          </div>
+
+          <button type="submit" class="boton" style="background-color:var(--color-primario); color:var(--color-blanco);">Enviar respuestas</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="seccion seccion--alt">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Otras formas de contacto</h2>
+        <div class="info-contacto">
+          <div class="info-contacto__item">
+            <svg class="info-contacto__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M4 5h16v14H4z"/><path d="M4 6l8 7 8-7"/>
+            </svg>
+            <div>
+              <h3 class="tarjeta__titulo" style="text-align:left;">Correo del proyecto</h3>
+              <p><a href="mailto:rutaclara.proyecto@unibarranquilla.edu.co">rutaclara.proyecto@unibarranquilla.edu.co</a></p>
+            </div>
+          </div>
+          <div class="info-contacto__item">
+            <svg class="info-contacto__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>
+            </svg>
+            <div>
+              <h3 class="tarjeta__titulo" style="text-align:left;">Institución</h3>
+              <p>Institución Universitaria de Barranquilla<br>Multicampus Barranquilla – Soledad</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="pie__grilla">
+      <div>
+        <p class="pie__titulo">Ruta Clara</p>
+        <p>Herramienta visual para comprender las rutas de Transmecar en Barranquilla y Soledad.</p>
+      </div>
+      <div>
+        <p class="pie__titulo">Navegación</p>
+        <ul class="pie__lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="rutas.html">Rutas</a></li>
+          <li><a href="proyecto.html">Proyecto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="pie__titulo">Proyecto académico</p>
+        <ul class="pie__lista">
+          <li>Institución Universitaria de Barranquilla</li>
+          <li>Multicampus Barranquilla – Soledad</li>
+        </ul>
+      </div>
+      <div>
+        <p class="pie__titulo">Aviso</p>
+        <p style="font-size:0.85rem;">Sitio informativo con fines académicos. Verifica horarios y tarifas con el operador oficial.</p>
+      </div>
+    </div>
+    <p class="pie__abajo">&copy; 2026 Ruta Clara. Proyecto informativo sobre rutas de Transmecar.</p>
+  </footer>
+</body>
+</html>

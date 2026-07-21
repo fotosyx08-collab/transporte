@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rutas | Ruta Clara</title>
+  <meta name="description" content="Consulta las rutas de Transmecar: Calle 17, Calle 30, Caracolí y La Central, con sus paradas principales.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#contenido-principal" class="saltar-enlace">Saltar al contenido principal</a>
+
+  <header class="encabezado">
+    <nav class="barra-nav" aria-label="Navegación principal">
+      <a href="index.html" class="marca">
+        <svg class="marca__icono" viewBox="0 0 48 48" role="img" aria-label="Logotipo de Ruta Clara">
+          <circle cx="24" cy="24" r="21" fill="none" stroke="#ffb400" stroke-width="3"/>
+          <path d="M14 28c2-10 6-14 10-14s8 4 10 14" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="14" cy="28" r="2.6" fill="#ffb400"/>
+          <circle cx="24" cy="20" r="2.6" fill="#ffb400"/>
+          <circle cx="34" cy="28" r="2.6" fill="#ffb400"/>
+        </svg>
+        <span>Ruta Clara</span>
+      </a>
+      <ul class="nav-lista">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="rutas.html" aria-current="page">Rutas</a></li>
+        <li><a href="proyecto.html">Proyecto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido-principal">
+    <section class="hero" style="padding:50px 20px;">
+      <div class="hero__contenido">
+        <span class="hero__etiqueta">4 rutas identificadas</span>
+        <h1 class="hero__titulo" style="font-size:2.2rem;">Rutas de Transmecar</h1>
+        <p class="hero__texto">Cada ruta tiene un color propio y una línea con sus paradas principales en orden.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+
+        <div class="aviso">
+          <strong>Antes de viajar:</strong> esta información resume las paradas principales con fines
+          de orientación. Los recorridos completos, horarios exactos y posibles cambios de ruta deben
+          verificarse con el Área Metropolitana de Barranquilla (AMB) o directamente con Transmecar.
+          Tarifa de referencia desde el 19 de enero de 2026: $3.700 en días ordinarios y $3.800 domingos
+          y festivos, unificada para el transporte público del área metropolitana.
+        </div>
+
+        <!-- RUTA CALLE 17 -->
+        <article class="ruta-tarjeta" style="--ruta-color: var(--ruta-17);">
+          <div class="ruta-tarjeta__cabecera">
+            <span class="ruta-tarjeta__codigo" aria-hidden="true">C17</span>
+            <div>
+              <p class="ruta-tarjeta__nombre">Ruta Calle 17</p>
+              <p class="ruta-tarjeta__trayecto">Nevada (Soledad) ↔ Barranquilla, por la Calle 17</p>
+            </div>
+          </div>
+          <div class="ruta-tarjeta__cuerpo">
+            <p class="ruta-tarjeta__subtitulo">Paradas principales</p>
+            <div class="linea-ruta-wrap">
+              <ol class="linea-ruta" aria-label="Paradas principales de la Ruta Calle 17, en orden">
+                <li class="parada parada--inicio"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Nevada<br>(origen)</span></li>
+                <li class="parada"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Soledad –<br>Aeropuerto</span></li>
+                <li class="parada"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">La<br>Virgencita</span></li>
+                <li class="parada"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Barranquilla –<br>Calle 17</span></li>
+                <li class="parada"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Univ. Simón<br>Bolívar</span></li>
+                <li class="parada"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Parque Los<br>Fundadores</span></li>
+                <li class="parada parada--fin"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Soledad<br>(retorno)</span></li>
+              </ol>
+            </div>
+            <ul class="ruta-tarjeta__notas">
+              <li>Conecta el corregimiento de Nevada con el centro de Barranquilla y el sector de la Universidad Simón Bolívar.</li>
+              <li>Es una ruta circular: el bus regresa a Soledad y Nevada por un recorrido similar.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- RUTA CALLE 30 -->
+        <article class="ruta-tarjeta" style="--ruta-color: var(--ruta-30);">
+          <div class="ruta-tarjeta__cabecera">
+            <span class="ruta-tarjeta__codigo" aria-hidden="true">C30</span>
+            <div>
+              <p class="ruta-tarjeta__nombre">Ruta Calle 30</p>
+              <p class="ruta-tarjeta__trayecto">Nevada (Soledad) ↔ Barranquilla, por la Calle 30</p>
+            </div>
+          </div>
+          <div class="ruta-tarjeta__cuerpo">
+            <p class="ruta-tarjeta__subtitulo">Paradas principales</p>
+            <div class="linea-ruta-wrap">
+              <ol class="linea-ruta" aria-label="Paradas principales de la Ruta Calle 30, en orden">
+                <li class="parada parada--inicio"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Nevada<br>(origen)</span></li>
+                <li class="parada"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Soledad –<br>Aeropuerto</span></li>
+                <li class="parada"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">La<br>Virgencita</span></li>
+                <li class="parada"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Hipódromo</span></li>
+                <li class="parada"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Barranquilla –<br>Calle 30</span></li>
+                <li class="parada"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Univ. Simón<br>Bolívar</span></li>
+                <li class="parada parada--fin"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Parque<br>Cultural</span></li>
+              </ol>
+            </div>
+            <ul class="ruta-tarjeta__notas">
+              <li>Pasa por el sector de El Hipódromo antes de entrar al centro de Barranquilla.</li>
+              <li>Comparte tramo final con la Ruta Calle 17 cerca de la Universidad Simón Bolívar.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- RUTA CARACOLÍ -->
+        <article class="ruta-tarjeta" style="--ruta-color: var(--ruta-caracoli);">
+          <div class="ruta-tarjeta__cabecera">
+            <span class="ruta-tarjeta__codigo" aria-hidden="true">CRC</span>
+            <div>
+              <p class="ruta-tarjeta__nombre">Ruta Caracolí</p>
+              <p class="ruta-tarjeta__trayecto">Corregimiento de Caracolí ↔ Barranquilla</p>
+            </div>
+          </div>
+          <div class="ruta-tarjeta__cuerpo">
+            <p class="ruta-tarjeta__subtitulo">Paradas principales</p>
+            <div class="linea-ruta-wrap">
+              <ol class="linea-ruta" aria-label="Paradas principales de la Ruta Caracolí, en orden">
+                <li class="parada parada--inicio"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Caracolí<br>(origen)</span></li>
+                <li class="parada"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Vía<br>Oriental</span></li>
+                <li class="parada"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Soledad –<br>Aeropuerto</span></li>
+                <li class="parada"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Barranquilla –<br>Calle 17</span></li>
+                <li class="parada"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Univ. Simón<br>Bolívar</span></li>
+                <li class="parada"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Soledad<br>(retorno)</span></li>
+                <li class="parada parada--fin"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Malambo –<br>Caracolí</span></li>
+              </ol>
+            </div>
+            <ul class="ruta-tarjeta__notas">
+              <li>Es la ruta con el recorrido más largo, conectando corregimientos rurales con Barranquilla.</li>
+              <li>Pasa también por el municipio de Malambo en el tramo de regreso.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- RUTA LA CENTRAL -->
+        <article class="ruta-tarjeta" style="--ruta-color: var(--ruta-central);">
+          <div class="ruta-tarjeta__cabecera">
+            <span class="ruta-tarjeta__codigo" aria-hidden="true">LC</span>
+            <div>
+              <p class="ruta-tarjeta__nombre">Ruta La Central</p>
+              <p class="ruta-tarjeta__trayecto">Nevada – Nueva Esperanza ↔ La Central (Barranquilla)</p>
+            </div>
+          </div>
+          <div class="ruta-tarjeta__cuerpo">
+            <p class="ruta-tarjeta__subtitulo">Paradas principales</p>
+            <div class="linea-ruta-wrap">
+              <ol class="linea-ruta" aria-label="Paradas principales de la Ruta La Central, en orden">
+                <li class="parada parada--inicio"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Nueva<br>Esperanza</span></li>
+                <li class="parada"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Soledad –<br>Terminal</span></li>
+                <li class="parada"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Autopista al<br>Aeropuerto</span></li>
+                <li class="parada"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Barranquilla –<br>Calle 17</span></li>
+                <li class="parada"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Univ. Simón<br>Bolívar</span></li>
+                <li class="parada"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">Soledad<br>(retorno)</span></li>
+                <li class="parada parada--fin"><span class="parada__punto" aria-hidden="true"></span><span class="parada__nombre">La Central –<br>Granabastos</span></li>
+              </ol>
+            </div>
+            <ul class="ruta-tarjeta__notas">
+              <li>Termina cerca del sector de La Central y Granabastos, zona comercial de Barranquilla.</li>
+              <li>Pasa por la Terminal de Transportes de Soledad, útil para viajeros intermunicipales.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="pie__grilla">
+      <div>
+        <p class="pie__titulo">Ruta Clara</p>
+        <p>Herramienta visual para comprender las rutas de Transmecar en Barranquilla y Soledad.</p>
+      </div>
+      <div>
+        <p class="pie__titulo">Navegación</p>
+        <ul class="pie__lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="rutas.html">Rutas</a></li>
+          <li><a href="proyecto.html">Proyecto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="pie__titulo">Proyecto académico</p>
+        <ul class="pie__lista">
+          <li>Institución Universitaria de Barranquilla</li>
+          <li>Multicampus Barranquilla – Soledad</li>
+        </ul>
+      </div>
+      <div>
+        <p class="pie__titulo">Aviso</p>
+        <p style="font-size:0.85rem;">Sitio informativo con fines académicos. Verifica horarios y tarifas con el operador oficial.</p>
+      </div>
+    </div>
+    <p class="pie__abajo">&copy; 2026 Ruta Clara. Proyecto informativo sobre rutas de Transmecar.</p>
+  </footer>
+</body>
+</html>

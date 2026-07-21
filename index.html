@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruta Clara | Entiende las rutas de Transmecar</title>
+  <meta name="description" content="Ruta Clara: herramienta visual para comprender fácilmente las rutas de Transmecar en Barranquilla y Soledad, Atlántico.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#contenido-principal" class="saltar-enlace">Saltar al contenido principal</a>
+
+  <header class="encabezado">
+    <nav class="barra-nav" aria-label="Navegación principal">
+      <a href="index.html" class="marca">
+        <svg class="marca__icono" viewBox="0 0 48 48" role="img" aria-label="Logotipo de Ruta Clara">
+          <circle cx="24" cy="24" r="21" fill="none" stroke="#ffb400" stroke-width="3"/>
+          <path d="M14 28c2-10 6-14 10-14s8 4 10 14" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="14" cy="28" r="2.6" fill="#ffb400"/>
+          <circle cx="24" cy="20" r="2.6" fill="#ffb400"/>
+          <circle cx="34" cy="28" r="2.6" fill="#ffb400"/>
+        </svg>
+        <span>Ruta Clara</span>
+      </a>
+      <ul class="nav-lista">
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="rutas.html">Rutas</a></li>
+        <li><a href="proyecto.html">Proyecto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido-principal">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__contenido">
+        <span class="hero__etiqueta">Transmecar · Barranquilla y Soledad</span>
+        <h1 class="hero__titulo">Entender tu ruta de bus, sin confusiones</h1>
+        <p class="hero__texto">
+          Ruta Clara es una herramienta visual que organiza la información de las rutas de
+          Transmecar para que estudiantes, trabajadores y visitantes encuentren su recorrido,
+          sus paradas clave y sus conexiones de forma simple y accesible.
+        </p>
+        <div class="hero__botones">
+          <a href="rutas.html" class="boton">Ver las rutas</a>
+          <a href="proyecto.html" class="boton boton--secundario">Conocer el proyecto</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EL PROBLEMA -->
+    <section class="seccion">
+      <div class="contenedor">
+        <span class="etiqueta">El problema</span>
+        <h2 class="titulo-seccion">La información de las rutas no siempre es clara</h2>
+        <p class="subtitulo-seccion">
+          Muchos usuarios de Transmecar tienen dificultades para interpretar recorridos, identificar
+          paradas y entender las conexiones entre rutas, lo que genera confusión, pérdida de tiempo y
+          desorientación, especialmente para quienes usan el sistema por primera vez.
+        </p>
+
+        <div class="grilla">
+          <article class="tarjeta">
+            <svg class="tarjeta__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v5l3 2"/>
+            </svg>
+            <h3 class="tarjeta__titulo">Pérdida de tiempo</h3>
+            <p>Tomar el bus equivocado o bajarse en la parada incorrecta alarga trayectos que podrían ser cortos.</p>
+          </article>
+          <article class="tarjeta">
+            <svg class="tarjeta__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z"/>
+              <circle cx="12" cy="10" r="2.5"/>
+            </svg>
+            <h3 class="tarjeta__titulo">Desorientación</h3>
+            <p>Sin un mapa claro de paradas y conexiones, es difícil saber en qué punto exacto del recorrido se está.</p>
+          </article>
+          <article class="tarjeta">
+            <svg class="tarjeta__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M4 21c2-6 4-9 8-9s6 3 8 9"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+            <h3 class="tarjeta__titulo">Barrera para nuevos usuarios</h3>
+            <p>Estudiantes y visitantes que no conocen la ciudad enfrentan más dificultad para movilizarse.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LA SOLUCIÓN -->
+    <section class="seccion seccion--alt">
+      <div class="contenedor">
+        <span class="etiqueta">Nuestra propuesta</span>
+        <h2 class="titulo-seccion">Diseño de información aplicado a la movilidad</h2>
+        <p class="subtitulo-seccion">
+          Cada ruta se presenta como una línea visual con sus paradas principales en orden, igual que
+          un mapa de metro, aplicando principios de jerarquía visual, color y accesibilidad.
+        </p>
+
+        <figure class="figura-marca">
+          <svg viewBox="0 0 460 140" width="460" height="140" role="img" aria-labelledby="titulo-figura desc-figura" style="max-width:100%; height:auto; margin:0 auto;">
+            <title id="titulo-figura">Ejemplo de línea de ruta simplificada</title>
+            <desc id="desc-figura">Diagrama con una línea horizontal azul y cinco puntos que representan paradas, cada una con una etiqueta breve debajo.</desc>
+            <line x1="40" y1="60" x2="420" y2="60" stroke="#0b3d91" stroke-width="5" stroke-linecap="round"/>
+            <g font-family="Arial, sans-serif" font-size="12" fill="#16202c" text-anchor="middle">
+              <circle cx="40" cy="60" r="9" fill="#0b3d91"/>
+              <text x="40" y="90">Origen</text>
+              <circle cx="135" cy="60" r="7" fill="#ffffff" stroke="#0b3d91" stroke-width="4"/>
+              <text x="135" y="40">Parada 2</text>
+              <circle cx="230" cy="60" r="7" fill="#ffffff" stroke="#0b3d91" stroke-width="4"/>
+              <text x="230" y="90">Parada 3</text>
+              <circle cx="325" cy="60" r="7" fill="#ffffff" stroke="#0b3d91" stroke-width="4"/>
+              <text x="325" y="40">Parada 4</text>
+              <circle cx="420" cy="60" r="9" fill="#0b3d91"/>
+              <text x="420" y="90">Destino</text>
+            </g>
+          </svg>
+          <figcaption>Así se representa cada ruta en Ruta Clara: una secuencia visual simple de principio a fin.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="seccion">
+      <div class="contenedor" style="text-align:center;">
+        <h2 class="titulo-seccion">¿Listo para encontrar tu ruta?</h2>
+        <p class="subtitulo-seccion" style="margin-left:auto; margin-right:auto;">
+          Consulta las rutas de Transmecar organizadas por color, con sus paradas principales y notas de conexión.
+        </p>
+        <a href="rutas.html" class="boton" style="background-color:var(--color-primario); color:var(--color-blanco);">Ver todas las rutas</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="pie__grilla">
+      <div>
+        <p class="pie__titulo">Ruta Clara</p>
+        <p>Herramienta visual para comprender las rutas de Transmecar en Barranquilla y Soledad.</p>
+      </div>
+      <div>
+        <p class="pie__titulo">Navegación</p>
+        <ul class="pie__lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="rutas.html">Rutas</a></li>
+          <li><a href="proyecto.html">Proyecto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="pie__titulo">Proyecto académico</p>
+        <ul class="pie__lista">
+          <li>Institución Universitaria de Barranquilla</li>
+          <li>Multicampus Barranquilla – Soledad</li>
+        </ul>
+      </div>
+      <div>
+        <p class="pie__titulo">Aviso</p>
+        <p style="font-size:0.85rem;">Sitio informativo con fines académicos. Verifica horarios y tarifas con el operador oficial.</p>
+      </div>
+    </div>
+    <p class="pie__abajo">&copy; 2026 Ruta Clara. Proyecto informativo sobre rutas de Transmecar.</p>
+  </footer>
+</body>
+</html>
